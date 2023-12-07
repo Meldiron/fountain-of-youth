@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		%sveltekit.head%
+
+		<title>Fountain of youth</title>
+
+		<style>
+			@font-face {
+				font-family: 'Aeonik Pro';
+				src: url('https://fonts.appwrite.io/aeonik-pro/AeonikPro-Medium.woff2') format('woff2');
+			}
+
+			.title {
+				font-family: 'Aeonik Pro', arial, sans-serif;
+				font-weight: 500;
+			}
+
+			body {
+				min-height: 100vh;
+			}
+		</style>
+	</head>
+	<body data-sveltekit-preload-data="hover" class="theme-dark">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
