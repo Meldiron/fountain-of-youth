@@ -93,25 +93,27 @@
 		<!--<Form>-->
 	</article>
 {:else if flow === 'step2'}
-{#if securityPhraseModal}
-<section class="alert-sticky is-info" style="position: fixed; top: 32px; right: 32px;">
-	<button
-	  class="button is-text is-only-icon"
-	  style="--button-size:1.5rem;"
-	  aria-label="close alert"
-	  type="button"
-	  on:click={closeSecurityPhrase}
-	>
-	  <span class="icon-x" aria-hidden="true"></span>
-	</button>
-	<div class="alert-sticky-image"><span class="icon-info" aria-hidden="true"></span></div>
-	<div class="alert-sticky-content">
-	  <p>We sent a link to {email} with security phrase: <code class="inline-code">{securityPhrase}</code></p>
-	</div>
-  </section>
-  {/if}
+	{#if securityPhraseModal}
+		<section class="alert-sticky is-info" style="position: fixed; top: 32px; right: 32px;">
+			<button
+				class="button is-text is-only-icon"
+				style="--button-size:1.5rem;"
+				aria-label="close alert"
+				type="button"
+				on:click={closeSecurityPhrase}
+			>
+				<span class="icon-x" aria-hidden="true"></span>
+			</button>
+			<div class="alert-sticky-image"><span class="icon-info" aria-hidden="true"></span></div>
+			<div class="alert-sticky-content">
+				<p>
+					We sent a link to {email} with security phrase:
+					<code class="inline-code">{securityPhrase}</code>
+				</p>
+			</div>
+		</section>
+	{/if}
 
-  
 	<article class="card common-section" role="generic" style="overflow: hidden;">
 		<form on:submit={signInFinish} class="form common-section">
 			<ul class="form-list" style="--form-list-gap: 1.5rem;">

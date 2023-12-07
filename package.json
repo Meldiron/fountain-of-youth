@@ -30,6 +30,7 @@
 	"type": "module",
 	"dependencies": {
 		"@appwrite.io/pink": "^0.2.0",
-		"appwrite": "^13.0.1"
+		"appwrite": "^13.0.1",
+		"matej-appwrite": "^13.0.0"
 	}
 }
