@@ -40,10 +40,10 @@
 	let dialog: any;
 </script>
 
-<div style="margin-top: 64px">
+<div style="margin-top: 32px; width: 100%; display: flex; justify-content: center;">
 	<svg
-		width="500"
-		height="500"
+		width="400"
+		height="400"
 		viewBox="0 0 500 500"
 		fill="none"
 		xmlns="http://www.w3.org/2000/svg"
